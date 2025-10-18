@@ -4,12 +4,12 @@
     <title>Adarsh's portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts for a stylish, formal, readable font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(90deg, #f3e8ff 0%, #e0e7ff 100%);
+            background: linear-gradient(90deg, #ffe4ec 0%, #e0e7ff 100%);
             color: #2d3748;
         }
         .main-layout {
@@ -17,8 +17,7 @@
             min-height: 100vh;
         }
         .intro-side {
-            background: #ffe4ec;
-            /* pastel pink for left side */
+            background: #ffe4ec; /* pastel pink for left side */
             flex: 0 0 400px;
             padding: 0 40px;
             display: flex;
@@ -28,10 +27,17 @@
             border-right: 1.5px solid #e2e8f0;
             box-shadow: 2px 0 10px rgba(0,0,0,0.03);
         }
+        .intro-side > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
         .intro-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'DM Serif Display', serif;
             font-size: 3em;
-            font-weight: 900;
+            font-weight: 400;
             margin-bottom: 18px;
             letter-spacing: 1.5px;
             color: #4b2067;
@@ -115,57 +121,6 @@
                 padding: 30px 10px 20px 10px;
             }
         }
-        .anticopyright {
-            text-align: center;
-            font-size: 0.95em;
-            color: #888;
-            margin: 40px 0 10px 0;
-        }
+        /* Removed .anticopyright */
     </style>
 </head>
-<body>
-    <div class="main-layout">
-        <aside class="intro-side">
-            <div>
-                <div class="intro-title">Adarsh Chhetri Poudel</div>
-                <div class="intro-sub">Exploring Computer Science &amp; Cybersecurity</div>
-                <div class="intro-desc">
-                    My name is Adarsh, and I am currently a high school student at Information Technology High School (ITHS). I am passionate about computer science, especially cybersecurity, and excited to learn more about technology.
-                </div>
-            </div>
-        </aside>
-        <main class="content-side">
-            <div class="catalog">
-                <div class="catalog-title">View My Resume</div>
-                <div class="catalog-desc">
-                    Download my resume to learn more about my experience, skills, and achievements in computer science and cybersecurity.
-                </div>
-                <a href="Resume%20for%20CS4CS%20changed.docx.pdf" download>
-                    <button class="download-btn">Download Resume</button>
-                </a>
-            </div>
-            <div class="catalog">
-                <div class="catalog-title">CS4CS Research Paper (NYU)</div>
-                <div class="catalog-desc">
-                    Recently, I attended the CS4CS program at NYU, where I worked on a research paper with my peers about AI and its impact on IoT devices. Download the paper below.
-                </div>
-                <a href="IoT_Research_Paper.pdf" download>
-                    <button class="download-btn">Download IoT Research Paper</button>
-                </a>
-            </div>
-            <div class="catalog">
-                <div class="catalog-title">Certifications</div>
-                <div class="catalog-desc">
-                    I am also expecting to earn my CompTIA Network+ and CompTIA Security+ certifications soon, which will further strengthen my knowledge and skills in cybersecurity and networking.
-                </div>
-            </div>
-        </main>
-    </div>
-    <div class="anticopyright">
-        &#169; All Rights Reserved. &mdash; Adarsh Chhetri Poudel, <span id="year"></span>
-    </div>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-</body>
-</html>
