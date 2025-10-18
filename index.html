@@ -3,11 +3,13 @@
 <head>
     <title>Adarsh's portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for a stylish, formal, readable font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f4f6fa;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(90deg, #f3e8ff 0%, #e0e7ff 100%);
             color: #2d3748;
         }
         .main-layout {
@@ -15,43 +17,40 @@
             min-height: 100vh;
         }
         .intro-side {
-            background: #fff;
+            background: #ffe4ec;
+            /* pastel pink for left side */
             flex: 0 0 400px;
-            padding: 60px 40px 40px 60px;
+            padding: 0 40px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
+            align-items: center;
             border-right: 1.5px solid #e2e8f0;
             box-shadow: 2px 0 10px rgba(0,0,0,0.03);
         }
         .intro-title {
+            font-family: 'Playfair Display', serif;
             font-size: 3em;
-            font-weight: 800;
+            font-weight: 900;
             margin-bottom: 18px;
             letter-spacing: 1.5px;
-            color: #2d3748;
-            text-align: left;
+            color: #4b2067;
+            text-align: center;
         }
         .intro-sub {
             font-size: 1.1em;
             color: #4a5568;
-            margin-bottom: 40px;
-            text-align: left;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 600;
         }
         .intro-desc {
             font-size: 1.08em;
             line-height: 1.5;
             color: #444;
-            margin-bottom: 60px;
-            text-align: left;
-        }
-        .scroll-down {
-            font-size: 1.05em;
-            color: #6b7280;
-            margin-top: 40px;
-            text-align: left;
-            font-style: italic;
-            letter-spacing: 0.5px;
+            margin-bottom: 0;
+            text-align: center;
+            max-width: 320px;
         }
         .content-side {
             flex: 1;
@@ -59,6 +58,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background: #e0e7ff; /* pastel purple for right side */
         }
         .catalog {
             background: #f8f8f8;
@@ -132,7 +132,6 @@
                 <div class="intro-desc">
                     My name is Adarsh, and I am currently a high school student at Information Technology High School (ITHS). I am passionate about computer science, especially cybersecurity, and excited to learn more about technology.
                 </div>
-                <div class="scroll-down">Scroll down for more info!</div>
             </div>
         </aside>
         <main class="content-side">
